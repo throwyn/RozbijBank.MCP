@@ -60,7 +60,6 @@ Product types: `personalAccount`, `savingsAccount`, `deposit`, `businessAccount`
 | `GetBanks` | List all available banks with logos |
 | `GetReferralCode` | Get a referral/invitation code for a bank |
 | `GetBlogArticles` | Published financial guides and articles |
-| `GetPlatformStatistics` | Platform stats: users, promotions, total earnings |
 | `CalculateDepositInterest` | Calculate net interest after Belka tax (19%) |
 
 ## Example Prompts
