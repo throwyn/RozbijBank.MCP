@@ -85,7 +85,7 @@ Product types: `personalAccount`, `savingsAccount`, `deposit`, `businessAccount`
 - **Website:** [rozbijbank.pl](https://rozbijbank.pl)
 - **MCP Server:** [mcp.rozbijbank.pl](https://mcp.rozbijbank.pl/)
 - **Blog:** [rozbijbank.pl/blog](https://rozbijbank.pl/blog)
-- **Smithery:** [smithery.ai/server/rozbijbank](https://smithery.ai/server/rozbijbank)
+- **Smithery:** [https://smithery.ai/servers/rozbijbank/rozbijbank](https://smithery.ai/servers/rozbijbank/rozbijbank)
 
 ## License
 
