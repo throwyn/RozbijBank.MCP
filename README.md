@@ -27,11 +27,12 @@ Add to your MCP client configuration:
 | Client | How to connect |
 |--------|---------------|
 | **Claude Desktop** | Settings → Developer → Edit Config → add the JSON above to `claude_desktop_config.json` |
+| **Cursor** | Add to `.cursor/mcp.json` — same JSON format as above |
 | **Claude.ai** | Settings → Integrations → Add MCP Server → paste URL |
+| **VS Code (Copilot)** | Add to `.vscode/mcp.json` with `"type": "http"` and `"url"` fields |
 | **Claude Code** | `claude mcp add rozbijbank --transport http https://mcp.rozbijbank.pl/` |
-| **Cursor** | Settings → MCP → Add Server → type `http`, paste URL |
-| **Windsurf** | Settings → MCP → Add Server → paste URL |
-| **VS Code (Copilot)** | Settings → MCP → add to `mcp.json` |
+| **Windsurf** | Windsurf Settings → MCP → Add Server → paste URL |
+| **ChatGPT Desktop** | Settings → Tools → Add MCP Server → paste URL |
 
 ## Available Tools
 
