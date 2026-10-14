@@ -2,7 +2,7 @@
 
 [Model Context Protocol](https://modelcontextprotocol.io) server for [RozbijBank](https://rozbijbank.pl) — Poland's bank comparison platform.
 
-Gives AI assistants real-time access to Polish bank accounts, savings, deposits, promotions, referral codes, and financial calculators.
+Gives AI assistants real-time access to Polish bank accounts, savings, deposits, credit cards, currency accounts, promotions, referral codes, and financial calculators.
 
 **Server URL:** `https://mcp.rozbijbank.pl/`
 
@@ -34,7 +34,7 @@ Add to your MCP client configuration:
 | **Windsurf** | Windsurf Settings → MCP → Add Server → paste URL |
 | **ChatGPT Desktop** | Settings → Tools → Add MCP Server → paste URL |
 
-## Available Tools
+## Available Tools (13)
 
 ### Bank Offers
 
@@ -44,6 +44,8 @@ Add to your MCP client configuration:
 | `SearchSavingsAccounts` | Compare savings accounts — interest rates, conditions | `bankName`, `minInterestRate`, `noCheckingRequired`, `sortBy`, `limit` |
 | `SearchDeposits` | Compare deposits — rates by amount, period, currency | `bankName`, `currency`, `period`, `minInterestRate`, `sortBy`, `limit` |
 | `SearchBusinessAccounts` | Compare business accounts for JDG and companies | `bankName`, `customerType`, `minScore`, `sortBy`, `limit` |
+| `SearchCreditCards` | Compare credit cards — fees, RRSO, grace period, rewards, moneyback | `bankName`, `onlyFree`, `minGracePeriodDays`, `minScore`, `sortBy`, `limit` |
+| `SearchCurrencyAccounts` | Compare foreign currency accounts — currencies, fees, exchange spread | `bankName`, `currency`, `onlyFree`, `onlyMultiCurrencyCard`, `minScore`, `sortBy`, `limit` |
 
 ### Promotions
 
@@ -62,6 +64,7 @@ Product types: `personalAccount`, `savingsAccount`, `deposit`, `businessAccount`
 | `GetReferralCode` | Get a referral/invitation code for a bank |
 | `GetBlogArticles` | Published financial guides and articles |
 | `CalculateDepositInterest` | Calculate net interest after Belka tax (19%) |
+| `GetTodayDate` | Today's date in the Europe/Warsaw timezone — for promotion deadlines |
 
 ## Example Prompts
 
@@ -75,7 +78,7 @@ Product types: `personalAccount`, `savingsAccount`, `deposit`, `businessAccount`
 
 ## Tech Stack
 
-- .NET 8.0 / ASP.NET Core
+- .NET 10 / ASP.NET Core
 - [ModelContextProtocol C# SDK](https://github.com/modelcontextprotocol/csharp-sdk)
 - Streamable HTTP transport
 - SQL Server database
